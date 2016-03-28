@@ -52,7 +52,7 @@ func TestComplete(t *testing.T) {
 	}
 }
 
-func TestPrint(t *testing.T) {
+func TestString(t *testing.T) {
 	var tt = []struct {
 		in     board
 		expect string
