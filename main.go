@@ -75,23 +75,23 @@ func (b board) complete() bool {
 }
 
 func (b board) String() (res string) {
-	out := &bytes.Buffer{}
+	var out bytes.Buffer
 
 	for i := 0; i < len(b); i++ {
 		if b[i] == X {
-			fmt.Fprintf(out, "x")
+			out.WriteString("x")
 		} else if b[i] == Y {
-			fmt.Fprintf(out, "y")
+			out.WriteString("y")
 		} else if b[i] == U {
-			fmt.Fprintf(out, " ")
+			out.WriteString(" ")
 		}
 
 		if i+1 == SIZE*SIZE {
-			fmt.Fprintf(out, "\n")
+			out.WriteString("\n")
 		} else if (i+1)%SIZE == 0 {
-			fmt.Fprintf(out, "\n-----\n")
+			out.WriteString("\n-----\n")
 		} else {
-			fmt.Fprintf(out, "|")
+			out.WriteString("|")
 		}
 	}
 
