@@ -10,8 +10,8 @@ Written in [golang](https://golang.org) by Bruce Downs
 * Starting with Y also simply doubles the totals
 
 ## Stats
-* Combinations for 3x3 is 9! (or 362880)
-* Combinations upon removal of solved boards is 255168
-* Number of winning boards 209088
-* Number of winning boards that are complete 81792
-* Number of CAT boards 46080
+* Combinations for 3x3 is 9! (or 362,880)
+* Combinations upon removal of solved boards is 255,168
+* Number of winning boards 209,088
+* Number of winning boards that are complete 81,792
+* Number of CAT boards 46,080
